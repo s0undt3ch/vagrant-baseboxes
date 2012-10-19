@@ -2,11 +2,12 @@ Vagrant Base Boxes
 ==================
 
 This project is used to maintain some Veewee definition files which will allow 
-us to (re)create some Vagrant boxes in order to test Salt projects.
+us to (re)create some Vagrant boxes in order to test Salt projects. This is 
+based on `Tim Dysinger's`_ work.
 
-The simplest way I've found to have Veewee and Vagrant working without any 
-glitches is by using RVM which is kind of ruby's equivalent of python's 
-virtualenv.
+The simplest way I've found to have `Veewee`_ and `Vagrant`_ working without 
+any glitches is by using RVM which is kind of ruby's equivalent of python's 
+`virtualenv`_.
 
 So in some quick easy steps::
 
@@ -84,10 +85,16 @@ gemset is not specified in either a project's `.rvmrc`, or at the command-line.
 
 
 Although not quite related to Veewee and specifically our use case, if you wish 
-to know a bit more of what we've done above, have some nice reading `here 
-http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you/`.
+to know a bit more of what we've done above, have some `nice reading here`_.
 
 Once you checkout this repository, a `.rvmrc` will be at your disposal used to 
 setup a gemset.
+
+
+.. _virtualenv: http://www.virtualenv.org
+.. _Veewee: https://github.com/jedi4ever/veewee
+.. _Vagrant: http://vagrantup.com/
+.. _Tim Dysinger's: https://github.com/dysinger/basebox
+.. _nice reading here: http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you/
 
 .. vim: fenc=utf-8 spell spl=en cc=80 tw=79 fo=want sts=2 sw=2 et
