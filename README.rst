@@ -100,7 +100,6 @@ setup a `gemset`_.
 .. _Veewee: https://github.com/jedi4ever/veewee
 .. _Vagrant: http://vagrantup.com
 .. _Tim Dysinger's: https://github.com/dysinger/basebox
-.. _nice reading here: 
-http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you
+.. _nice reading here: http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you
 
 .. vim: fenc=utf-8 spell spl=en cc=80 tw=79 fo=want sts=2 sw=2 et
