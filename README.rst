@@ -6,8 +6,8 @@ us to (re)create some Vagrant boxes in order to test Salt projects. This is
 based on `Tim Dysinger's`_ work.
 
 The simplest way I've found to have `Veewee`_ and `Vagrant`_ working without 
-any glitches is by using RVM which is kind of ruby's equivalent of python's 
-`virtualenv`_.
+any glitches is by using `RVM`_ which is kind of `ruby's`_ equivalent of 
+python's `virtualenv`_.
 
 So in some quick easy steps::
 
@@ -79,22 +79,28 @@ Adapt the version to what you get from the first command.
 Now whenever we open a new bash session for this user we’ll have Ruby available 
 for us to use!
 
-As an additional side-note: Users can, and should, use a gemset when possible 
-so that they don't pollute their `default` which is what is selected when a 
-gemset is not specified in either a project's `.rvmrc`, or at the command-line.
+As an additional side-note: Users can, and should, use a `gemset`_ when 
+possible so that they don't pollute their `default` which is what is selected 
+when a `gemset`_ is not specified in either a project's `.rvmrc`, or at the 
+command-line.
 
 
-Although not quite related to Veewee and specifically our use case, if you wish 
-to know a bit more of what we've done above, have some `nice reading here`_.
+Although not quite related to `Veewee`_ and specifically our use case, if you 
+wish to know a bit more of what we've done above, have some `nice reading 
+here`_.
 
 Once you checkout this repository, a `.rvmrc` will be at your disposal used to 
-setup a gemset.
+setup a `gemset`_.
 
 
+.. _RVM: https://rvm.io
+.. _Ruby's: http://www.ruby-lang.org
+.. _gemset: https://rvm.io/gemsets
 .. _virtualenv: http://www.virtualenv.org
 .. _Veewee: https://github.com/jedi4ever/veewee
-.. _Vagrant: http://vagrantup.com/
+.. _Vagrant: http://vagrantup.com
 .. _Tim Dysinger's: https://github.com/dysinger/basebox
-.. _nice reading here: http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you/
+.. _nice reading here: 
+http://ryanbigg.com/2010/12/ubuntu-ruby-rvm-rails-and-you
 
 .. vim: fenc=utf-8 spell spl=en cc=80 tw=79 fo=want sts=2 sw=2 et
