@@ -1,7 +1,7 @@
 #!/bin/bash - 
 #===============================================================================
 #
-#          FILE: zerodisk.sh
+#          FILE: vagrant-ssh-keys.sh
 #
 #               Vewee basebox configuration file
 #
@@ -11,6 +11,10 @@
 #===============================================================================
 set -o nounset                              # Treat unset variables as an error
 
-# Zero out the free space to save space in the final image:
-dd if=/dev/zero of=/EMPTY bs=1M
-rm -f /EMPTY
+echo ""
+echo "Installing Vagrant SSH Keys"
+mkdir /home/vagrant/.ssh
+chmod 0700 /home/vagrant/.ssh
+wget --no-check-certificate 'http://github.com/mitchellh/vagrant/raw/master/keys/vagrant.pub' -O /home/vagrant/.ssh/authorized_keys
+chown -R vagrant /home/vagrant/.ssh
+chmod -R go-rwsx /home/vagrant/.ssh

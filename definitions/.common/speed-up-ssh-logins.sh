@@ -1,7 +1,7 @@
 #!/bin/bash - 
 #===============================================================================
 #
-#          FILE: zerodisk.sh
+#          FILE: speed-up-ssh-logins.sh
 #
 #               Vewee basebox configuration file
 #
@@ -11,6 +11,9 @@
 #===============================================================================
 set -o nounset                              # Treat unset variables as an error
 
-# Zero out the free space to save space in the final image:
-dd if=/dev/zero of=/EMPTY bs=1M
-rm -f /EMPTY
+echo
+echo "Speed-up remote logins ..."
+echo "" >> /etc/ssh/sshd_config
+echo "# added by veewee/postinstall.sh" >> /etc/ssh/sshd_config
+echo "UseDNS no" >> /etc/ssh/sshd_config
+echo "" >> /etc/ssh/sshd_config
