@@ -1,0 +1,1 @@
+../.fedora/add-box-build-stamp.sh

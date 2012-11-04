@@ -1,0 +1,1 @@
+../.common/remove-temporary-files.sh
