@@ -1,0 +1,1 @@
+../.opensuse/replace-motd.sh

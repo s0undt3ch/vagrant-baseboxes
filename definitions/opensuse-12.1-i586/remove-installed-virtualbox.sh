@@ -1,0 +1,1 @@
+../.opensuse/remove-installed-virtualbox.sh

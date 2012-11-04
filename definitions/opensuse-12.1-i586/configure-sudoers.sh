@@ -1,0 +1,1 @@
+../.opensuse/configure-sudoers.sh

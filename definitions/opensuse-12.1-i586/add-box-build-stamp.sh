@@ -1,0 +1,1 @@
+../.opensuse/add-box-build-stamp.sh

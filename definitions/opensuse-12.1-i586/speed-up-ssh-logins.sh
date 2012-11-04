@@ -1,0 +1,1 @@
+../.opensuse/speed-up-ssh-logins.sh

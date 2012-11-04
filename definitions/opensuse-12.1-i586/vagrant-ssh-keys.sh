@@ -1,0 +1,1 @@
+../.opensuse/vagrant-ssh-keys.sh

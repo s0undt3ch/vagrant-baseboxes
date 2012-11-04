@@ -1,0 +1,1 @@
+../.opensuse/zerodisk.sh

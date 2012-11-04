@@ -1,0 +1,1 @@
+../.opensuse/remove-temporary-files.sh
