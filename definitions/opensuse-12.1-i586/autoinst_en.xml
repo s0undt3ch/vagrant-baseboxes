@@ -136,6 +136,12 @@
   </general>
   <groups config:type="list">
     <group>
+      <gid>1000</gid>
+      <group_password>x</group_password>
+      <groupname>vagrant</groupname>
+      <userlist></userlist>
+    </group>
+    <group>
       <gid>100</gid>
       <group_password>x</group_password>
       <groupname>users</groupname>
@@ -375,7 +381,7 @@
       <hosts_entry>
         <host_address>127.0.0.2</host_address>
         <names config:type="list">
-          <name>vagrant-opensuse-121-x32.vagrantup.com vagrant-opensuse-121-x32</name>
+          <name>vagrant-opensuse-12_1-i586.vagrantup.com vagrant-opensuse-12_1-i586</name>
         </names>
       </hosts_entry>
       <hosts_entry>
@@ -449,7 +455,7 @@
     <dns>
       <dhcp_hostname config:type="boolean">true</dhcp_hostname>
       <domain>vagrantup.com</domain>
-      <hostname>vagrant-opensuse-121-x32</hostname>
+      <hostname>vagrant-opensuse-12_1-i586</hostname>
       <resolv_conf_policy>auto</resolv_conf_policy>
       <searchlist config:type="list">
         <search>vagrantup.com</search>
@@ -463,6 +469,7 @@
         <name>82540EM Gigabit Ethernet Controller</name>
         <startmode>auto</startmode>
         <usercontrol>no</usercontrol>
+        <firewall>no</firewall>
       </interface>
       <interface>
         <broadcast>127.255.255.255</broadcast>
@@ -1131,7 +1138,7 @@
     <user>
       <encrypted config:type="boolean">true</encrypted>
       <fullname>vagrant</fullname>
-      <gid>100</gid>
+      <gid>1000</gid>
       <home>/home/vagrant</home>
       <password_settings>
         <expire></expire>

@@ -50,6 +50,7 @@ Veewee::Session.declare({
     "remove-zypper-locks.sh",
     "remove-installed-virtualbox.sh",
     "install-virtualbox-guest-additions.sh",
+    "remove-udev-persistent-rules.sh",
     "replace-motd.sh",
     "remove-temporary-files.sh",
     "zerodisk.sh"
