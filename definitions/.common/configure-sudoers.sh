@@ -12,6 +12,20 @@
 #===============================================================================
 set -o nounset                              # Treat unset variables as an error
 
-# Set up sudo
-cp /etc/sudoers /etc/sudoers.orig
-sed -i -e 's/%sudo ALL=(ALL) ALL/%sudo ALL=NOPASSWD:ALL/g' /etc/sudoers
+# Set up sudoers
+grep '#includedir /etc/sudoers.d' /etc/sudoers &> /dev/null
+
+if [ $? -eq 0 ]; then
+    echo
+    echo 'Creating /etc/sudoers.d/vagrant'
+    echo 'Defaults:vagrant !requiretty' > /etc/sudoers.d/vagrant
+    echo '%vagrant ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers.d/vagrant
+    chmod 440 /etc/sudoers.d/vagrant
+else
+    echo
+    echo 'Adding to /etc/sudoers'
+    echo >> /etc/sudoers
+    echo '# Added by veewee setup' >> /etc/sudoers
+    echo 'Defaults:vagrant !requiretty' >> /etc/sudoers
+    echo '%vagrant ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers.d/vagrant
+fi

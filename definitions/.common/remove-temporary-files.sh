@@ -14,9 +14,11 @@ set -o nounset                              # Treat unset variables as an error
 echo
 echo "Cleaning up temporary files"
 
-VBOX_VERSION=$(cat .vbox_version)
-VBOX_ISO=VBoxGuestAdditions_$VBOX_VERSION.iso
-test -f $VBOX_ISO && rm -f $VBOX_ISO
+if [ -f .vbox_version ]; then
+    VBOX_VERSION=$(cat .vbox_version)
+    VBOX_ISO=VBoxGuestAdditions_$VBOX_VERSION.iso
+    test -f $VBOX_ISO && rm -f $VBOX_ISO
+fi
 rm -f /tmp/*.sh
 rm -f /home/vagrant/*.sh
 rm -f /home/vagrant/.vbox_version
